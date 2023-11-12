@@ -1,0 +1,15 @@
+<!-- clientes.html -->
+<body>
+    <h1>Lista de Clientes</h1>
+    <ul>
+      {% for cliente in clientes %}
+        <li>
+          <strong>Nombre:</strong> {{ cliente.nombre }}
+          <strong>Apellido:</strong> {{ cliente.apellido }}
+          <strong>Edad:</strong> {{ cliente.edad }}
+          <strong>DUI:</strong> {{ cliente.Dui }}
+        </li>
+      {% endfor %}
+    </ul>
+  </body>
+  

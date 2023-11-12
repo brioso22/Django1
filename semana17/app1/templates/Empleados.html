@@ -1,0 +1,14 @@
+<!-- Empleado1.html -->
+<body>
+  <h1>Lista de Empleados</h1>
+  <ul>
+    {% for empleado in empleados %}
+      <li>
+        <strong>Nombre:</strong> {{ empleado.nombre }}
+        <strong>Apellido:</strong> {{ empleado.apellido }}
+        <strong>Edad:</strong> {{ empleado.edad }}
+        <strong>Área:</strong> {{ empleado.AreaId.nombre_del_area }}
+      </li>
+    {% endfor %}
+  </ul>
+</body>
